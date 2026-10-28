@@ -8,8 +8,8 @@ Pure Python, passive analysis only. Use it on your own or authorized .pcap files
 """
 import argparse, csv, datetime, os, random, socket, struct, webbrowser
 from collections import Counter, defaultdict
-from detectors import run_detectors, ORDER, CLEAR
-from dashboard import build_dashboard
+from Detectors import run_detectors, ORDER, CLEAR
+from Dashboard import build_dashboard
 
 PORTS = {20: "FTP", 21: "FTP", 22: "SSH", 23: "Telnet", 25: "SMTP", 53: "DNS",
          67: "DHCP", 68: "DHCP", 80: "HTTP", 110: "POP3", 123: "NTP",
